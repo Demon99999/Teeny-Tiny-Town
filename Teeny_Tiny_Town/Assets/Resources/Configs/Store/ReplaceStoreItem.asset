@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 926cd4fbae596aa458cbcdb8bade396b, type: 3}
+  m_Name: ReplaceStoreItem
+  m_EditorClassIdentifier: 
+  _type: 0
+  _panelAssetReference: {fileID: 8516655384374346620, guid: 0ddbb3fd39d291a4ea4968ccccf6143b, type: 3}
+  _spriteconAssetReference: {fileID: 21300000, guid: f0b37b1ac4e5d0f4da59afb5bf157de2, type: 3}
+  _name: "\u041F\u0435\u0440\u0435\u043C\u0435\u0449\u0435\u043D\u0438\u0435"
+  _cost: 80
+  _costCoefficient: 1.5

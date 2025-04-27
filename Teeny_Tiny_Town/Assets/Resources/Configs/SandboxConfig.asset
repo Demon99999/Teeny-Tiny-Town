@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9edec8de0f1754d4ea3a9bf65317fe6c, type: 3}
+  m_Name: SandboxConfig
+  m_EditorClassIdentifier: 
+  _size: {x: 9, y: 9}
+  _grounds:
+  - Type: 0
+    Icon: {fileID: 21300000, guid: 0c5ff46412815854a9e910681a3c7dcf, type: 3}
+  - Type: 1
+    Icon: {fileID: 21300000, guid: 56eb806cf93c56d4eb2b0586428ada88, type: 3}
+  - Type: 2
+    Icon: {fileID: 21300000, guid: 9e845ff6ce54bb34f93bc34ba355166c, type: 3}
+  - Type: 3
+    Icon: {fileID: 21300000, guid: 01abd6005c8e1be4c8fa88f9af58a59b, type: 3}
+  - Type: 4
+    Icon: {fileID: 21300000, guid: 5a8e3651fc4916e40b9e89a63d07bb86, type: 3}
+  _sandboxWorld: {fileID: 3767210888370257737, guid: d7decea14797e784782d71cb20facce1, type: 3}
+  _sandboxPanelElement: {fileID: 5299429494054840360, guid: c31c80ec2d6ebd94d96a077334f48aa9, type: 3}
+  _lockSprite: {fileID: 8270716647600307372, guid: ae2883e8e8397a446936452c0b826eb2, type: 3}

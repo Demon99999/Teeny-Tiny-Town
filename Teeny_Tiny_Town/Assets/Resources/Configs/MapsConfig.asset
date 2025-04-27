@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54fd617e0a9cf954295c8f8621ef7970, type: 3}
+  m_Name: MapsConfig
+  m_EditorClassIdentifier: 
+  _currentWorldPosition: {x: 0, y: 0, z: 0}
+  _distanceBetweenWorlds: 100
+  _availableMovesCount: 300
+  _goals: d00700008813000010270000983a0000204e000050c30000a0860100400d0300
+  _educationMapdId: 1
+  _educationMap: {fileID: 4171067520734356167, guid: 6948c62764a9ab84ab80e67d16030c20, type: 3}
+  _rotationPanel: {fileID: 3917043275363895992, guid: 2086c6d4c733ce34fa3ecf507938ca96, type: 3}
+  _worldWalletSoundPlayer: {fileID: -7317638863758407767, guid: ea12253aa738224498a757138c3cfec5, type: 3}
+  _uiSoundPlayer: {fileID: 4448976551880315781, guid: 24e915a1b5bfe534690ad04dd00cafb8, type: 3}
+  _collectionItemCreator: {fileID: -3368493647699583324, guid: 7744931c8161b3846bfb04ace3b72725, type: 3}
+  _peculiarityIconPanel: {fileID: -230640314372080531, guid: 92d12e42697af424f9ec26868cc3c0e0, type: 3}

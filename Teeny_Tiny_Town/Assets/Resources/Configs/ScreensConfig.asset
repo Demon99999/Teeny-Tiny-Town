@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44d7867bfe345c94db35d925f50bb5bd, type: 3}
+  m_Name: ScreensConfig
+  m_EditorClassIdentifier: 
+  _configs:
+  - _template: {fileID: 2969577738325720598, guid: 6d75c3bd3e9cb4d4eb1dcb2cfcd3e459, type: 3}
+    _type: 3
+  - _template: {fileID: 6780845681883360935, guid: 15c2d9392c0915a46b3ffaa2b390e19f, type: 3}
+    _type: 4
+  - _template: {fileID: 4180660608067920526, guid: aa116ef85722e7a48868805cdfaadd30, type: 3}
+    _type: 15
+  - _template: {fileID: 2946522003541778679, guid: b40d1da30db2cb44e85e7d570c711ca1, type: 3}
+    _type: 0
+  - _template: {fileID: -6123359886035149512, guid: 7d18b0bf572258f4ab3b025fe0b3fbdc, type: 3}
+    _type: 6
+  - _template: {fileID: 54095256196335039, guid: 8f68afb653641914ab1ae3878abee546, type: 3}
+    _type: 14
+  - _template: {fileID: 8932958457314078299, guid: 376b5218d69433e4b88b2252494dbf8d, type: 3}
+    _type: 9
+  - _template: {fileID: -8485056436115035582, guid: a6828b2b600f55744842859eb5e6e8f2, type: 3}
+    _type: 2
+  - _template: {fileID: 6092270925930734944, guid: 4e9e55bbad0251b4480c47c3cbe8a246, type: 3}
+    _type: 1
+  - _template: {fileID: 4262549413682466814, guid: 2ae682ecd38026747ac4245c107db619, type: 3}
+    _type: 5
+  - _template: {fileID: 3341716492167630682, guid: 94c7449d517f5f0448b36b183f0c0c68, type: 3}
+    _type: 7
+  - _template: {fileID: 8024002819516954605, guid: 23d77459bc9a3cb4785e48b9041799e8, type: 3}
+    _type: 8
+  - _template: {fileID: 9167623694196970855, guid: 5bb917d40ede7204a8eb41fddfcece9f, type: 3}
+    _type: 10
+  - _template: {fileID: 4982314710946841921, guid: 833a24bba5f015c43bb4f6321bac2d8b, type: 3}
+    _type: 11
+  - _template: {fileID: 6841828783296747965, guid: eaea47425831ce74a9b251836747323a, type: 3}
+    _type: 12
+  - _template: {fileID: -6254034363655525363, guid: 95573ad77166fb34db20544ef4a95ac3, type: 3}
+    _type: 13

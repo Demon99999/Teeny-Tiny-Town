@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b10ed8bdda65ec488af921ad09cc2e7, type: 3}
+  m_Name: PileOftonesConfig
+  m_EditorClassIdentifier: 
+  _buildingType: 10
+  _pointsRewardForMerge: 13
+  _name: "\u041A\u0443\u0447\u0430 \u043A\u0430\u043C\u043D\u0435\u0439"
+  _title: "\u041A\u0443\u0447\u0430 \u043A\u0430\u043C\u043D\u0435\u0439, \u0433\u043E\u0442\u043E\u0432\u044B\u0445
+    \u043A \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044E."
+  _proportionOfLoss: 4
+  _lockIconAssetReference: {fileID: 21300000, guid: db1204c47f1252f4d8b2fc6983335c7d, type: 3}
+  _iconAssetReference: {fileID: 21300000, guid: 0d6c745681f605f4d8b1559e2f13d116, type: 3}
+  _prefab: {fileID: -1502590492641998670, guid: 5b98338ce9a24b94596ecb916f753140, type: 3}

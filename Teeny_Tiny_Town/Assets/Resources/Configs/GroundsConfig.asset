@@ -1,0 +1,196 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5581c8843b8a9944b50ea7bbdbd39e5, type: 3}
+  m_Name: GroundsConfig
+  m_EditorClassIdentifier: 
+  GroundConfigs:
+  - Type: 0
+    RoadConfigs:
+    - Type: 0
+      Prefab: {fileID: 7311164548307492942, guid: 5d91f09438cd0c74082f55df2e00b431, type: 3}
+      ValidNeighborsGridPositions: []
+    - Type: 1
+      Prefab: {fileID: 7311164548307492942, guid: 5d91f09438cd0c74082f55df2e00b431, type: 3}
+      ValidNeighborsGridPositions:
+      - Rotation: 0
+        NormalizedGridPositions: []
+    - Type: 2
+      Prefab: {fileID: 7311164548307492942, guid: cee3afc67e1e72c468fee90898a6d679, type: 3}
+      ValidNeighborsGridPositions:
+      - Rotation: 0
+        NormalizedGridPositions:
+        - {x: 1, y: 0}
+        - {x: -1, y: 0}
+        - {x: 0, y: 1}
+        - {x: 0, y: -1}
+    - Type: 3
+      Prefab: {fileID: 7311164548307492942, guid: 22c217840d1f37049aa8fddba157324b, type: 3}
+      ValidNeighborsGridPositions:
+      - Rotation: 0
+        NormalizedGridPositions:
+        - {x: -1, y: 0}
+        - {x: 0, y: 1}
+        - {x: 1, y: 0}
+      - Rotation: 90
+        NormalizedGridPositions:
+        - {x: 0, y: 1}
+        - {x: 1, y: 0}
+        - {x: 0, y: -1}
+      - Rotation: 180
+        NormalizedGridPositions:
+        - {x: 1, y: 0}
+        - {x: 0, y: -1}
+        - {x: -1, y: 0}
+      - Rotation: 270
+        NormalizedGridPositions:
+        - {x: 0, y: -1}
+        - {x: -1, y: 0}
+        - {x: 0, y: 1}
+    - Type: 4
+      Prefab: {fileID: 7311164548307492942, guid: bd41b115696fa45489a14a7fc6fe6151, type: 3}
+      ValidNeighborsGridPositions:
+      - Rotation: 180
+        NormalizedGridPositions:
+        - {x: 0, y: 1}
+      - Rotation: 270
+        NormalizedGridPositions:
+        - {x: 1, y: 0}
+      - Rotation: 0
+        NormalizedGridPositions:
+        - {x: 0, y: -1}
+      - Rotation: 90
+        NormalizedGridPositions:
+        - {x: -1, y: 0}
+    - Type: 6
+      Prefab: {fileID: 7311164548307492942, guid: 75d5d54f24557a243812cf7377196c00, type: 3}
+      ValidNeighborsGridPositions:
+      - Rotation: 90
+        NormalizedGridPositions:
+        - {x: 0, y: 1}
+        - {x: 0, y: -1}
+      - Rotation: 0
+        NormalizedGridPositions:
+        - {x: 1, y: 0}
+        - {x: -1, y: 0}
+    - Type: 5
+      Prefab: {fileID: 7311164548307492942, guid: bace00ccfac489340b8f24d89e628809, type: 3}
+      ValidNeighborsGridPositions:
+      - Rotation: 0
+        NormalizedGridPositions:
+        - {x: 0, y: 1}
+        - {x: 1, y: 0}
+      - Rotation: 90
+        NormalizedGridPositions:
+        - {x: 1, y: 0}
+        - {x: 0, y: -1}
+      - Rotation: 180
+        NormalizedGridPositions:
+        - {x: 0, y: -1}
+        - {x: -1, y: 0}
+      - Rotation: 270
+        NormalizedGridPositions:
+        - {x: -1, y: 0}
+        - {x: 0, y: 1}
+  - Type: 1
+    RoadConfigs:
+    - Type: 0
+      Prefab: {fileID: 7311164548307492942, guid: 37113d1c97d7f64419446845d53f54da, type: 3}
+      ValidNeighborsGridPositions: []
+    - Type: 1
+      Prefab: {fileID: 7311164548307492942, guid: 5d91f09438cd0c74082f55df2e00b431, type: 3}
+      ValidNeighborsGridPositions:
+      - Rotation: 0
+        NormalizedGridPositions: []
+    - Type: 2
+      Prefab: {fileID: 7691783836823584024, guid: d4265b664fb93054f8d569c53e637f9b, type: 3}
+      ValidNeighborsGridPositions:
+      - Rotation: 0
+        NormalizedGridPositions:
+        - {x: 1, y: 0}
+        - {x: -1, y: 0}
+        - {x: 0, y: 1}
+        - {x: 0, y: -1}
+    - Type: 3
+      Prefab: {fileID: 7691783836823584024, guid: 328232fecc65bd14a9e6ffda682acdbe, type: 3}
+      ValidNeighborsGridPositions:
+      - Rotation: 0
+        NormalizedGridPositions:
+        - {x: -1, y: 0}
+        - {x: 0, y: 1}
+        - {x: 1, y: 0}
+      - Rotation: 90
+        NormalizedGridPositions:
+        - {x: 0, y: 1}
+        - {x: 1, y: 0}
+        - {x: 0, y: -1}
+      - Rotation: 180
+        NormalizedGridPositions:
+        - {x: 1, y: 0}
+        - {x: 0, y: -1}
+        - {x: -1, y: 0}
+      - Rotation: 270
+        NormalizedGridPositions:
+        - {x: 0, y: -1}
+        - {x: -1, y: 0}
+        - {x: 0, y: 1}
+    - Type: 4
+      Prefab: {fileID: 7691783836823584024, guid: 46d5b83091ef91843905a89ff7fcfa36, type: 3}
+      ValidNeighborsGridPositions:
+      - Rotation: 0
+        NormalizedGridPositions:
+        - {x: 0, y: 1}
+      - Rotation: 90
+        NormalizedGridPositions:
+        - {x: 1, y: 0}
+      - Rotation: 180
+        NormalizedGridPositions:
+        - {x: 0, y: -1}
+      - Rotation: 270
+        NormalizedGridPositions:
+        - {x: -1, y: 0}
+    - Type: 6
+      Prefab: {fileID: 7691783836823584024, guid: 3ee1e1a4bf6562549bbc0baaf9e37f10, type: 3}
+      ValidNeighborsGridPositions:
+      - Rotation: 90
+        NormalizedGridPositions:
+        - {x: 0, y: 1}
+        - {x: 0, y: -1}
+      - Rotation: 0
+        NormalizedGridPositions:
+        - {x: 1, y: 0}
+        - {x: -1, y: 0}
+    - Type: 5
+      Prefab: {fileID: 7691783836823584024, guid: 9da9192ce99c9b844929012a80c2f0c0, type: 3}
+      ValidNeighborsGridPositions:
+      - Rotation: 0
+        NormalizedGridPositions:
+        - {x: 0, y: 1}
+        - {x: 1, y: 0}
+      - Rotation: 90
+        NormalizedGridPositions:
+        - {x: 1, y: 0}
+        - {x: 0, y: -1}
+      - Rotation: 180
+        NormalizedGridPositions:
+        - {x: 0, y: -1}
+        - {x: -1, y: 0}
+      - Rotation: 270
+        NormalizedGridPositions:
+        - {x: -1, y: 0}
+        - {x: 0, y: 1}
+  DefaultGroundConfigs:
+  - TileType: 0
+    Prefab: {fileID: 7311164548307492942, guid: 5d91f09438cd0c74082f55df2e00b431, type: 3}
+  - TileType: 1
+    Prefab: {fileID: 566809139093331426, guid: 9e24376929297ad409e939487e92ad5d, type: 3}
+  - TileType: 2
+    Prefab: {fileID: 566809139093331426, guid: 0970e0266b2f7ad458caa875c97d0c22, type: 3}

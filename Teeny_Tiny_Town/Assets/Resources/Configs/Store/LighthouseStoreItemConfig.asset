@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d9f6e79ad046543891019a5ad6ce46, type: 3}
+  m_Name: LighthouseStoreItemConfig
+  m_EditorClassIdentifier: 
+  _type: 3
+  _panelAssetReference: {fileID: 972902500543922529, guid: 5584bda734a1a6141a98e149f4da4423, type: 3}
+  _spriteconAssetReference: {fileID: 21300000, guid: 73661bf111a7d864c95ede444bc817e8, type: 3}
+  _name: "\u041C\u0430\u044F\u043A"
+  _cost: 500
+  _costCoefficient: 5
+  _availableCount: 5

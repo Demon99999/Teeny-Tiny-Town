@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af3d57d05a0afef45baebd3518935161, type: 3}
+  m_Name: AvailableForConstructionBuildingsConfig
+  m_EditorClassIdentifier: 
+  RequiredCreatedBuildingsToAddNext: 0
+  AvailableUpgradeBrach: 0
+  Branches:
+  - Elements:
+    - BuildingType: 1
+      NextBuildingType: 2
+    - BuildingType: 2
+      NextBuildingType: 3
+    - BuildingType: 3
+      NextBuildingType: 4
+    - BuildingType: 4
+      NextBuildingType: 5
+    - BuildingType: 5
+      NextBuildingType: 6
+    - BuildingType: 6
+      NextBuildingType: 7
+    - BuildingType: 7
+      NextBuildingType: 8
+    - BuildingType: 8
+      NextBuildingType: 0
+  - Elements:
+    - BuildingType: 9
+      NextBuildingType: 10
+    - BuildingType: 10
+      NextBuildingType: 11
+    - BuildingType: 11
+      NextBuildingType: 12
+    - BuildingType: 12
+      NextBuildingType: 0
+  - Elements:
+    - BuildingType: 13
+      NextBuildingType: 0
+    - BuildingType: 14
+      NextBuildingType: 0

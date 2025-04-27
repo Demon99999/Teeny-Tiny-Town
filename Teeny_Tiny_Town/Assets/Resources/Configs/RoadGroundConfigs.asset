@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9599bd06b29c5e14f888d4082d5be96c, type: 3}
+  m_Name: RoadGroundConfigs
+  m_EditorClassIdentifier: 
+  Configs:
+  - BuildingType: 1
+    GroundType: 0
+  - BuildingType: 2
+    GroundType: 0
+  - BuildingType: 3
+    GroundType: 0
+  - BuildingType: 4
+    GroundType: 0
+  - BuildingType: 5
+    GroundType: 0
+  - BuildingType: 6
+    GroundType: 1
+  - BuildingType: 7
+    GroundType: 1
+  - BuildingType: 8
+    GroundType: 1
+  - BuildingType: 9
+    GroundType: 0
+  - BuildingType: 10
+    GroundType: 0
+  - BuildingType: 11
+    GroundType: 0
+  - BuildingType: 12
+    GroundType: 0
+  - BuildingType: 14
+    GroundType: 0
