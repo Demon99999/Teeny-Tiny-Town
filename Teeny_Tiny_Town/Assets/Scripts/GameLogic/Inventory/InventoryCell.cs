@@ -62,7 +62,6 @@ namespace Assets.Scripts.GameLogic.Inventory
                 _nextBuildingForPlacingCreator.ChangeCurrentBuildingForPlacing(BuildingType);
                 _worldData.Inventory[_serialNumber] = buildingType;
             }
-
             else
             {
                 _worldData.Inventory[_serialNumber] = _buildingMarker.BuildingType;

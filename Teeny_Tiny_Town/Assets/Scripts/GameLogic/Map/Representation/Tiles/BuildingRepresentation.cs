@@ -25,14 +25,13 @@ namespace Assets.Scripts.GameLogic.Map.Representation.Tiles
         private void OnDestroy()
         {
             DOTween.Kill(transform);
-            
+
             if (_sequence != null)
             {
                 _sequence.Kill();
                 _sequence = null;
             }
         }
-
 
         public void Init(BuildingType type)
         {

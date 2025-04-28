@@ -21,7 +21,6 @@ namespace Assets.Scripts.GameLogic.Map
         private IGameFactory _gameFactory;
         private IPersistantProgrss _persistentProgressService;
         private IStaticDataService _staticDataService;
-        
         private Map _currentMap;
         private bool _isWorldChanged;
 
@@ -88,7 +87,7 @@ namespace Assets.Scripts.GameLogic.Map
             if (config is ExpandingMapConfig expandingConfig)
             {
                 Destroy(_currentMap.gameObject);
-                _persistentProgressService.Progress.CurrencyMapDatas[Int32.Parse(CurrentWorldDataId)].Size = expandingConfig.StartSize;
+                _persistentProgressService.Progress.CurrencyMapDatas[int.Parse(CurrentWorldDataId)].Size = expandingConfig.StartSize;
                 _currentMap = _gameFactory.CreateMap(config.Id, _currentMapPosition, transform);
                 _currentMap.Enter();
             }
@@ -163,8 +162,7 @@ namespace Assets.Scripts.GameLogic.Map
                 ChangeWorld(
                     _persistentProgressService.Progress.LastPlayedWorldDataId,
                     _nextMapdPosition,
-                    _previousMapPosition
-                );
+                    _previousMapPosition);
 
                 yield return new WaitWhile(() => _isWorldChanged);
             }
@@ -182,6 +180,9 @@ namespace Assets.Scripts.GameLogic.Map
             _currentMap.Enter();
         }
 
-        public class Factory : PlaceholderFactory<MapSwitcher> { }
+        public class Factory : PlaceholderFactory<MapSwitcher>
+        {
+
+        }
     }
 }

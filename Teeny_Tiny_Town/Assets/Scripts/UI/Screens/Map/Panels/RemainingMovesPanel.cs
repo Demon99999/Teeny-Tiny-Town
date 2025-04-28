@@ -31,6 +31,9 @@ namespace Assets.Scripts.UI.Screens.Map.Panels
             _remainingMovesCountValue.text = _persistentProgressService.Progress.GameplayMovesCounter.RemainingMovesCount.ToString();
         }
 
-        public class Factory : PlaceholderFactory<RemainingMovesPanel> { }
+        public class Factory : PlaceholderFactory<RemainingMovesPanel>
+        {
+
+        }
     }
 }

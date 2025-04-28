@@ -35,14 +35,16 @@ namespace Assets.Scripts.GameLogic.Map.Representation.ActionHandler
             _inputService.HandlePressedMovePerformed -= OnHandlePressedMovePerformed;
         }
 
-        public void Enter<TState>() where TState : ActionHandlerState
+        public void Enter<TState>()
+            where TState : ActionHandlerState
         {
             CurrentState?.Exit();
             CurrentState = _states[typeof(TState)];
             CurrentState?.Enter();
         }
 
-        public void RegisterState<TState>(TState handlerState) where TState : ActionHandlerState
+        public void RegisterState<TState>(TState handlerState)
+            where TState : ActionHandlerState
         {
             _states.Add(typeof(TState), handlerState);
         }

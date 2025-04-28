@@ -18,6 +18,9 @@ namespace Assets.Scripts.GameLogic.Map.StateMachineMap
             _screensSwitcher.Switch<WaitingWindow>();
         }
 
-        public void Exit() { }
+        public void Exit()
+        {
+
+        }
     }
 }

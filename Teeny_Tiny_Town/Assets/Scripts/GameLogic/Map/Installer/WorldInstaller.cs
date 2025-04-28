@@ -109,7 +109,7 @@ namespace Assets.Scripts.GameLogic.Map.Installer
         }
 
         private void BindMarkersVisibility()
-        { 
+        {
             Container.Bind<MarkersVisibility>().AsSingle();
         }
 

@@ -1,10 +1,8 @@
 ﻿using System;
 using Assets.Scripts.Data;
 using Assets.Scripts.Data.Map;
-using Assets.Scripts.GameLogic.Map.Representation.Tiles;
 using Assets.Scripts.Services.StaticDataServices;
 using Assets.Scripts.Services.StaticDataServices.Configs.Buildings;
-using UnityEngine;
 
 namespace Assets.Scripts.GameLogic.Map.Infrastructure.Buildings
 {

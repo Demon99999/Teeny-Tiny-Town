@@ -29,13 +29,15 @@ namespace Assets.Scripts.Services.StaticDataServices
         ScreenConfig GetScreen(ScreenType type);
         BuildingStoreItemConfig GetBuildingStoreItem(BuildingType buildingType);
         GroundType GetGroundType(BuildingType buildingType);
-        TMapConfig GetMap<TMapConfig>(string id) where TMapConfig : MapConfig;
+        TMapConfig GetMap<TMapConfig>(string id)
+            where TMapConfig : MapConfig;
         GainStoreItemConfig GetGainStoreItem(GainStoreItemType gainStoreItemType);
         RewardConfig GetReward(RewardType type);
         StoreItemConfig GetGameplayStorItem(GameplayStoreItemType type);
         AdditionalBonusConfig GetAdditionalBonus(AdditionalBonusType type);
         BuildingType[] GetAllBuildings();
-        TBuilding GetBuilding<TBuilding>(BuildingType buildingType) where TBuilding : BuildingConfig;
+        TBuilding GetBuilding<TBuilding>(BuildingType buildingType)
+            where TBuilding : BuildingConfig;
         GroundDefaultSurfaceConfig GetDefaultGround(TileType tileType);
     }
 }

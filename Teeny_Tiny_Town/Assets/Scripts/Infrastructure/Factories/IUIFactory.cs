@@ -1,18 +1,16 @@
 using Assets.Scripts.Services.StaticDataServices.Configs.AdditionalBonuses;
 using Assets.Scripts.Services.StaticDataServices.Configs.Buildings;
-using Assets.Scripts.Services.StaticDataServices.Configs.Maps;
 using Assets.Scripts.Services.StaticDataServices.Configs.Reward;
 using Assets.Scripts.Services.StaticDataServices.Configs.Screens;
+using Assets.Scripts.Services.StaticDataServices.Configs.Store;
 using Assets.Scripts.UI;
 using Assets.Scripts.UI.Screens.Map.Panels.Store;
+using Assets.Scripts.UI.Screens.Map.Panels.Store.GainPanels;
 using Assets.Scripts.UI.Screens.Map.Quest;
 using Assets.Scripts.UI.Screens.Map.Reward;
-using System.Threading.Tasks;
-using Assets.Scripts.Services.StaticDataServices.Configs.Store;
-using Assets.Scripts.UI.Screens.Map.Panels.Store.GainPanels;
-using UnityEngine;
 using Assets.Scripts.UI.Screens.SandBox;
 using Assets.Scripts.UI.Screens.SelectionMap;
+using UnityEngine;
 
 namespace Assets.Scripts.Infrastructure.Factories
 {

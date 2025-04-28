@@ -26,6 +26,9 @@ namespace Assets.Scripts.GameLogic.Map.StateMachineMap
             callbakc?.Invoke();
         }
 
-        public void Exit() { }
+        public void Exit()
+        {
+
+        }
     }
 }

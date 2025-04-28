@@ -109,6 +109,9 @@ namespace Assets.Scripts.GameLogic.Map.Representation.Markers
             TryUpdate(data.CurrentBuildingType);
         }
 
-        public class Factory : PlaceholderFactory<BuildingMarker> { }
+        public class Factory : PlaceholderFactory<BuildingMarker>
+        {
+
+        }
     }
 }

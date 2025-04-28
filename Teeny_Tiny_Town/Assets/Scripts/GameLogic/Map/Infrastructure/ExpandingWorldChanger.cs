@@ -11,7 +11,7 @@ namespace Assets.Scripts.GameLogic.Map.Infrastructure
     {
         private bool _isExpanded;
         private ITileRepresentationCreatable _tileRepresentationCreatable;
-        
+
         public ExpandingWorldChanger(
             IStaticDataService staticDataService,
             ICurrencyMapData mapData,

@@ -50,8 +50,11 @@ namespace Assets.Scripts.GameLogic.Map.StateMachineMap
             }
         }
 
-        public void Exit() { }
-        
+        public void Exit()
+        {
+
+        }
+
         private void ShowAdditionalBonusOffer()
         {
             _windowsSwitcher.Switch<AdditionalBonusOfferWindow>();

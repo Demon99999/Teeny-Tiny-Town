@@ -12,9 +12,9 @@ namespace Assets.Scripts.GameLogic.Map.Infrastructure
     {
         private const uint MinTilesCountToMerge = 3;
 
-        private IMapData _mapData;
         private readonly IBuildingGivable _buildingGibable;
         private readonly IPersistantProgrss _persistentProgressService;
+        private IMapData _mapData;
 
         private List<TallTile> _adjacentTiles;
 

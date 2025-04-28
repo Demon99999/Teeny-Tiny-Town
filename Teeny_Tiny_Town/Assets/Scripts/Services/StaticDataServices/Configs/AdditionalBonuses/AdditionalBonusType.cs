@@ -4,6 +4,6 @@
     {
         WorldWalletValue,
         Buldozer,
-        ReplaceItem
+        ReplaceItem,
     }
 }

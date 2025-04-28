@@ -21,7 +21,6 @@ namespace Assets.Scripts.GameLogic.Map.Infrastructure
             IPersistantProgrss persistentProgressService)
             : base(tileData, type, staticDataService, building, mapData, buildingGivable, persistentProgressService)
         {
-
             Ground = new Ground(StaticDataService, StaticDataService.GetGroundType(BuildingType));
             _aroundTiles = new List<RoadTile>();
         }
@@ -105,13 +104,11 @@ namespace Assets.Scripts.GameLogic.Map.Infrastructure
 
         public override void CleanAll(bool isAnimate)
         {
-
             base.CleanAll(isAnimate);
 
             Ground.Clean();
             TileRepresentation.GroundCreator.Create(Ground.Type, Ground.RoadType, Ground.Rotation, isAnimate);
         }
-
 
         public override void UpdateBuilding(Building building, IBuildingsUpdatable buildingsUpdatable, bool isAnimate)
         {

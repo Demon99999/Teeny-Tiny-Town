@@ -22,7 +22,7 @@ namespace Assets.Scripts.GameLogic.Map.Installer
         protected readonly StatesFactory StatesFactory;
 
         public MapBootstrapper(
-            IWorldChanger worldChanger, 
+            IWorldChanger worldChanger,
             IMapFactory mapFactory,
             WorldStateMachine worldStateMachine,
             StatesFactory statesFactory,

@@ -13,7 +13,8 @@ namespace Assets.Scripts.Infrastructure.StateMachine
             _container = container;
         }
 
-        public TState Create<TState>() where TState : IExitableState
+        public TState Create<TState>()
+            where TState : IExitableState
         {
             TState state = _instantiator.Instantiate<TState>();
             _container.BindInterfacesTo<TState>().FromInstance(state);

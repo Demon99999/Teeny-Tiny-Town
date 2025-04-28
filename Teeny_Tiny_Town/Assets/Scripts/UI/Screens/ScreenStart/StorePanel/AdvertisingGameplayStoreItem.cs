@@ -3,8 +3,8 @@ using Assets.Scripts.Services.SaveLoadServices;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using Zenject;
 using YG;
+using Zenject;
 
 namespace Assets.Scripts.UI.Screens.ScreenStart.StorePanel
 {

@@ -14,6 +14,5 @@ namespace Assets.Scripts.Infrastructure.Factories
         GameplayCamera CreateCamera();
         void CreateUiSoundPlayer();
         void CreateWorldWalletSoundPlayer();
-        //SandboxWorld CreateSandboxWorld();
     }
 }

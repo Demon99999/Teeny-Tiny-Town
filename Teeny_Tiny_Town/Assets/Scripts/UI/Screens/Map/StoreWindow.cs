@@ -16,7 +16,7 @@ namespace Assets.Scripts.UI.Screens.Map
         {
             _worldStateMachine = worldStateMachine;
         }
-        
+
         private void OnEnable()
         {
             _hideButton.onClick.AddListener(OnHideButtonClicked);
@@ -28,7 +28,7 @@ namespace Assets.Scripts.UI.Screens.Map
         }
 
         private void OnHideButtonClicked()
-        { 
+        {
             _worldStateMachine.Enter<WorldChangingState>();
         }
     }

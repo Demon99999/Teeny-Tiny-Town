@@ -9,7 +9,7 @@ using UnityEngine;
 using UnityEngine.Audio;
 using Zenject;
 
-namespace Assets.Scripts
+namespace Assets.Scripts.GameLogic
 {
     public class GlobalInstaller : MonoInstaller, ICoroutineRunner
     {

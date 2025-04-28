@@ -11,13 +11,13 @@ namespace Assets.Scripts.GameLogic.Map.Representation.Tiles
 
         private IMapFactory _mapFactory;
 
+        private Transform BuildingPoint => _groundCreator.Ground.BuildingPoint;
+
         [Inject]
         private void Construct(IMapFactory mapFactory)
         {
             _mapFactory = mapFactory;
         }
-
-        private Transform BuildingPoint => _groundCreator.Ground.BuildingPoint;
 
         public BuildingRepresentation Create(BuildingType buildingType)
         {

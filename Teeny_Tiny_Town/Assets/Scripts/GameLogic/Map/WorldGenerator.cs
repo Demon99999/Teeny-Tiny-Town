@@ -55,6 +55,9 @@ namespace Assets.Scripts.GameLogic.Map
                 gridPosition.y * _cellSize);
         }
 
-        public class Factory : PlaceholderFactory<WorldGenerator> { }
+        public class Factory : PlaceholderFactory<WorldGenerator>
+        {
+
+        }
     }
 }

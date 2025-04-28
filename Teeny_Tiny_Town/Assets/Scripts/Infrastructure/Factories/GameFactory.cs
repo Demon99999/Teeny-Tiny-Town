@@ -82,7 +82,8 @@ namespace Assets.Scripts.Infrastructure.Factories
             return mapGameObject.GetComponent<Map>();
         }
 
-        private void CreateAndBindSoundPlayer<T>(T prefabComponent) where T : Component
+        private void CreateAndBindSoundPlayer<T>(T prefabComponent)
+            where T : Component
         {
             var playerObject = _container.InstantiatePrefab(prefabComponent.gameObject);
             var component = playerObject.GetComponent<T>();

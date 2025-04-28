@@ -20,7 +20,7 @@ namespace Assets.Scripts.GameLogic
         [SerializeField] private UiSoundPlayer _uiSoundPlayer;
         [SerializeField] private WorldWalletSoundPlayer _worldWalletSoundPlayer;
         [SerializeField] protected RemainingMovesPanel RemainingMovesPanel;
-        
+
         public override void InstallBindings()
         {
             Container.BindInterfacesAndSelfTo<GameplayBootstrapper>().AsSingle().NonLazy();

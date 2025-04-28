@@ -15,6 +15,6 @@
         PileOftones,
         Gold,
         Lighthouse,
-        Crane
+        Crane,
     }
 }

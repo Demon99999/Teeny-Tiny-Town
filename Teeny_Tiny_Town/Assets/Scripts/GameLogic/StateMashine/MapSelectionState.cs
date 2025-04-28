@@ -31,6 +31,9 @@ namespace Assets.Scripts.GameLogic.StateMashine
             _camera.MoveTo(_cameraStartPosition);
         }
 
-        public void Exit() { }
+        public void Exit()
+        {
+
+        }
     }
 }

@@ -31,6 +31,9 @@ namespace Assets.Scripts.Infrastructure.StateMachine.State
             _sceneLoader.Load(GameScene);
         }
 
-        public void Exit() { }
+        public void Exit()
+        {
+
+        }
     }
 }

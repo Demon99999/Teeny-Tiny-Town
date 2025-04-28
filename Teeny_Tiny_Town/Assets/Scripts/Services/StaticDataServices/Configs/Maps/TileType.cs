@@ -4,6 +4,6 @@
     {
         RoadGround,
         TallGround,
-        WaterSurface
+        WaterSurface,
     }
 }

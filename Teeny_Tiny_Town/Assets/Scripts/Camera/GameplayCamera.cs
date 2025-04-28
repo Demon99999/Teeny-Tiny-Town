@@ -50,6 +50,9 @@ namespace Assets.Scripts.Camera
             _mainCamera.orthographic = _persistentProgressService.Progress.SettingsData.IsOrthographicCamera;
         }
 
-        public class Factory : PlaceholderFactory<GameplayCamera> { }
+        public class Factory : PlaceholderFactory<GameplayCamera>
+        {
+
+        }
     }
 }

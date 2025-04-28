@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Assets.Scripts.Services.Input
 {
-    public interface IInputService 
+    public interface IInputService
     {
         event Action<Vector2> HandleMoved;
         event Action<Vector2> HandlePressedMovePerformed;

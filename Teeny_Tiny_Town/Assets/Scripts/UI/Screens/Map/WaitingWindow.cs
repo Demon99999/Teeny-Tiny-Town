@@ -5,8 +5,8 @@ using Assets.Scripts.Services.PersistantProgrssService;
 using Assets.Scripts.Services.StaticDataServices;
 using UnityEngine;
 using UnityEngine.UI;
-using Zenject;
 using YG;
+using Zenject;
 
 namespace Assets.Scripts.UI.Screens.Map
 {

@@ -11,7 +11,7 @@ namespace Assets.Scripts.UI.Screens.SandBox
         [SerializeField] private Button _hideButton;
 
         private GameStateMachine _gameStateMachine;
-        
+
         [Inject]
         private void Construct(GameStateMachine gameStateMachine)
         {

@@ -14,19 +14,22 @@ namespace Assets.Scripts.Infrastructure.StateMachine
             _states = new Dictionary<Type, IExitableState>();
         }
 
-        public void Enter<TState>() where TState : class, IState
+        public void Enter<TState>()
+            where TState : class, IState
         {
             IState state = ChangeState<TState>();
             state.Enter();
         }
 
-        public void Enter<TState, TPayLoad>(TPayLoad payLoad) where TState : class, IPayLoadedState<TPayLoad>
+        public void Enter<TState, TPayLoad>(TPayLoad payLoad)
+            where TState : class, IPayLoadedState<TPayLoad>
         {
             TState state = ChangeState<TState>();
             state.Enter(payLoad);
         }
 
-        private TState ChangeState<TState>() where TState : class, IExitableState
+        private TState ChangeState<TState>()
+            where TState : class, IExitableState
         {
             _activeState?.Exit();
 
@@ -36,12 +39,14 @@ namespace Assets.Scripts.Infrastructure.StateMachine
             return state;
         }
 
-        public void RegisterState<TState>(TState state) where TState : IExitableState
+        public void RegisterState<TState>(TState state)
+            where TState : IExitableState
         {
             _states.Add(typeof(TState), state);
         }
-        
-        private TState GetState<TState>() where TState : class, IExitableState
+
+        private TState GetState<TState>()
+            where TState : class, IExitableState
         {
             return _states[typeof(TState)] as TState;
         }

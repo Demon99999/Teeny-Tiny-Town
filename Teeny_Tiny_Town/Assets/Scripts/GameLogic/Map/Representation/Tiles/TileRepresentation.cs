@@ -80,7 +80,8 @@ namespace Assets.Scripts.GameLogic.Map.Representation.Tiles
             _building = null;
         }
 
-        public TBuilding TryChangeBuilding<TBuilding>(BuildingType targetBuildingType, bool isAnimate, bool waitForCompletion) where TBuilding : BuildingRepresentation
+        public TBuilding TryChangeBuilding<TBuilding>(BuildingType targetBuildingType, bool isAnimate, bool waitForCompletion)
+            where TBuilding : BuildingRepresentation
         {
             if (BuildingType != targetBuildingType)
             {
@@ -89,18 +90,18 @@ namespace Assets.Scripts.GameLogic.Map.Representation.Tiles
                     DestroyBuilding(false);
                 }
 
-                if (targetBuildingType != BuildingType.Undefined)
-                {
-                    _building =_buildingCreator.Create(targetBuildingType);
+                if (targetBuildingType == BuildingType.Undefined)
+                    return null;
 
-                    if (isAnimate)
-                    {
-                        _putBuildingAudioSource.Play();
-                        _building.AnimatePut(waitForCompletion);
-                    }
+                _building =_buildingCreator.Create(targetBuildingType);
 
+                if (!isAnimate)
                     return _building as TBuilding;
-                }
+
+                _putBuildingAudioSource.Play();
+                _building.AnimatePut(waitForCompletion);
+
+                return _building as TBuilding;
             }
 
             return null;
@@ -116,6 +117,9 @@ namespace Assets.Scripts.GameLogic.Map.Representation.Tiles
             building.transform.position = _groundCreator.Ground.BuildingPoint.position;
         }
 
-        public class Factory : PlaceholderFactory<TileRepresentation> { }
+        public class Factory : PlaceholderFactory<TileRepresentation>
+        {
+
+        }
     }
 }

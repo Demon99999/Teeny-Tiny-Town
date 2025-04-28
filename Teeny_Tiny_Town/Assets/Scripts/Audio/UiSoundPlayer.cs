@@ -12,6 +12,9 @@ namespace Assets.Scripts.Audio
             _auidoSource.Play();
         }
 
-        public class Factory : PlaceholderFactory<UiSoundPlayer> { }
+        public class Factory : PlaceholderFactory<UiSoundPlayer>
+        {
+
+        }
     }
 }

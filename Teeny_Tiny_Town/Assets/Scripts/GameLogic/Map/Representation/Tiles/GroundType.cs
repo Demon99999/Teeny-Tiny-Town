@@ -3,6 +3,6 @@
     public enum GroundType
     {
         Soil,
-        Asphalt
+        Asphalt,
     }
 }

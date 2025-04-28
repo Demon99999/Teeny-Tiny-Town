@@ -27,6 +27,9 @@ namespace Assets.Scripts.Audio
             _audioSource.Play();
         }
 
-        public class Factory : PlaceholderFactory<WorldWalletSoundPlayer> { }
+        public class Factory : PlaceholderFactory<WorldWalletSoundPlayer>
+        {
+
+        }
     }
 }

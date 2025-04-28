@@ -9,16 +9,14 @@ namespace Assets.Scripts.GameLogic.Map.Infrastructure.Buildings
 {
     public class Lighthouse : Building, IDisposable
     {
-        private uint _currentBonus;
-
         private readonly WorldWallet _worldWallet;
         private readonly ICurrencyMapData _currencyMapData;
         private readonly ITileGetable _tileGetable;
         private readonly Vector2Int _gridPosition;
         private readonly List<Tile> _aroundTiles;
 
-        public Vector2Int GridPosition => _gridPosition;
-        
+        private uint _currentBonus;
+
         public Lighthouse(
             BuildingType type,
             WorldWallet worldWallet,
@@ -38,6 +36,8 @@ namespace Assets.Scripts.GameLogic.Map.Infrastructure.Buildings
             UpdateBonus();
         }
 
+        public Vector2Int GridPosition => _gridPosition;
+
         public void Dispose()
         {
             _currencyMapData.RemoveLighthouseBonus(_currentBonus);
@@ -47,7 +47,7 @@ namespace Assets.Scripts.GameLogic.Map.Infrastructure.Buildings
         private void OnTimeToPaymentPayableBuildings()
         {
             uint payment = 0;
-            
+
             foreach (Tile tile in _aroundTiles)
             {
                 if (tile.Building is PayableBuilding payableBuilding)
@@ -78,6 +78,7 @@ namespace Assets.Scripts.GameLogic.Map.Infrastructure.Buildings
                     newBonus += payableBuilding.Payment;
                 }
             }
+
             return newBonus;
         }
 

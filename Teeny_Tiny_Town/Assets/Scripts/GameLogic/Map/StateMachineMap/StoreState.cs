@@ -18,6 +18,9 @@ namespace Assets.Scripts.GameLogic.Map.StateMachineMap
             _windowsSwitcher.Switch<StoreWindow>();
         }
 
-        public void Exit() { }
+        public void Exit()
+        {
+
+        }
     }
 }

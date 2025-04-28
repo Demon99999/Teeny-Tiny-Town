@@ -29,6 +29,9 @@ namespace Assets.Scripts.GameLogic.StateMashine
             }
         }
 
-        public void Exit() { }
+        public void Exit()
+        {
+
+        }
     }
 }

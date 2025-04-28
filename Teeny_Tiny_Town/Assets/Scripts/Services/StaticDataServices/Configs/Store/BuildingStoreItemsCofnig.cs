@@ -8,8 +8,8 @@ namespace Assets.Scripts.Services.StaticDataServices.Configs.Store
     {
         [SerializeField] private BuildingStoreItem _assetReference;
 
-        public BuildingStoreItem AssetReference => _assetReference;
-
         public BuildingStoreItemConfig[] Configs;
+
+        public BuildingStoreItem AssetReference => _assetReference;
     }
 }

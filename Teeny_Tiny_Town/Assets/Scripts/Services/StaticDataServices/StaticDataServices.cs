@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine.InputSystem.Utilities;
 using Assets.Scripts.GameLogic.Map.Representation.Tiles;
 using Assets.Scripts.Infrastructure.AssetPro;
 using Assets.Scripts.Services.StaticDataServices.Configs;
@@ -14,6 +13,7 @@ using Assets.Scripts.Services.StaticDataServices.Configs.Reward;
 using Assets.Scripts.Services.StaticDataServices.Configs.Screens;
 using Assets.Scripts.Services.StaticDataServices.Configs.Store;
 using UnityEngine;
+using UnityEngine.InputSystem.Utilities;
 
 namespace Assets.Scripts.Services.StaticDataServices
 {
@@ -55,7 +55,7 @@ namespace Assets.Scripts.Services.StaticDataServices
         public SandboxConfig SandboxConfig { get; private set; }
 
         public void Initialize()
-        { 
+        {
             LoadMapsConfig();
             LoadGainStoreItemConfigs();
             LoadQuestsConfig();
@@ -78,7 +78,8 @@ namespace Assets.Scripts.Services.StaticDataServices
             return _buildingConfigs.Keys.OrderBy(type => (int)type).ToArray();
         }
 
-        public TMapConfig GetMap<TMapConfig>(string id) where TMapConfig : MapConfig
+        public TMapConfig GetMap<TMapConfig>(string id)
+            where TMapConfig : MapConfig
         {
            return _mapConfigs.TryGetValue(id, out MapConfig config) ? config as TMapConfig : null;
         }
@@ -103,7 +104,8 @@ namespace Assets.Scripts.Services.StaticDataServices
             return _additionalBonusConfigs.TryGetValue(type, out AdditionalBonusConfig config) ? config : null;
         }
 
-        public TBuilding GetBuilding<TBuilding>(BuildingType buildingType) where TBuilding : BuildingConfig
+        public TBuilding GetBuilding<TBuilding>(BuildingType buildingType)
+            where TBuilding : BuildingConfig
         {
             return _buildingConfigs.TryGetValue(buildingType, out BuildingConfig config) ? config as TBuilding : null;
         }
@@ -242,12 +244,14 @@ namespace Assets.Scripts.Services.StaticDataServices
             _gameplayStoreItemConfigs = configs.ToDictionary(value => value.Type, value => value);
         }
 
-        private TConfig GetConfig<TConfig>(string path) where TConfig : Object
+        private TConfig GetConfig<TConfig>(string path)
+            where TConfig : Object
         {
             return _assetsProvider.Load<TConfig>(path);
         }
 
-        private TConfigs[] GetConfigs<TConfigs>(string path) where TConfigs : Object
+        private TConfigs[] GetConfigs<TConfigs>(string path)
+            where TConfigs : Object
         {
             return _assetsProvider.LoadAll<TConfigs>(path);
         }

@@ -36,7 +36,6 @@ namespace Assets.Scripts.GameLogic
 
             RegisterMaps();
             RegisterGameplayStates();
-            ;
             _uiFactory.CreateBlur();
             RegisterScreens();
 

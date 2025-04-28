@@ -35,8 +35,11 @@ namespace Assets.Scripts.Infrastructure.StateMachine.State
             stateMachine.Enter<GameLoopState>();
         }
 
-        public void Exit() { }
-        
+        public void Exit()
+        {
+
+        }
+
         private void LoadProgressOrInitNew()
         {
             _progressService.Progress = _saveLoadService.LoadProgres() ?? CreateNewProgress();

@@ -2,5 +2,8 @@
 
 namespace Assets.Scripts.GameLogic.StateMashine
 {
-    public class GameplayStateMachine : StateMachine { }
+    public class GameplayStateMachine : StateMachine
+    {
+
+    }
 }

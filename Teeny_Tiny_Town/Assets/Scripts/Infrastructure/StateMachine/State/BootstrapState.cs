@@ -5,8 +5,8 @@ namespace Assets.Scripts.Infrastructure.StateMachine.State
 {
     public class BootstrapState : IState
     {
-        private GameStateMachine _stateMachine;
         private readonly IStaticDataService _staticDataService;
+        private GameStateMachine _stateMachine;
 
         public BootstrapState(GameStateMachine stateMachine, IStaticDataService staticDataService)
         {
@@ -20,8 +20,11 @@ namespace Assets.Scripts.Infrastructure.StateMachine.State
             _stateMachine.Enter<LoadProgressState>();
         }
 
-        public void Exit() { }
-        
+        public void Exit()
+        {
+
+        }
+
         private void RegisterServices()
         {
             _staticDataService.Initialize();

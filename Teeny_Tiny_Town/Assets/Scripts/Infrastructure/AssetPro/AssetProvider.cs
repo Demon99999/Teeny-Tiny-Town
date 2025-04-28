@@ -7,7 +7,8 @@ namespace Assets.Scripts.Infrastructure.AssetPro
     {
         private readonly Dictionary<string, Object> _loadedAssets = new Dictionary<string, Object>();
 
-        public TAsset Load<TAsset>(string path) where TAsset : Object
+        public TAsset Load<TAsset>(string path)
+            where TAsset : Object
         {
             if (!_loadedAssets.TryGetValue(path, out Object asset))
             {
@@ -18,7 +19,8 @@ namespace Assets.Scripts.Infrastructure.AssetPro
             return (TAsset)asset;
         }
 
-        public TAsset[] LoadAll<TAsset>(string folderPath) where TAsset : Object
+        public TAsset[] LoadAll<TAsset>(string folderPath)
+            where TAsset : Object
         {
             TAsset[] assets = Resources.LoadAll<TAsset>(folderPath);
 

@@ -55,6 +55,9 @@ namespace Assets.Scripts.UI.Screens.Map.Reward
             Clicked?.Invoke(this);
         }
 
-        public class Factory : PlaceholderFactory<RewardPanel> { }
+        public class Factory : PlaceholderFactory<RewardPanel>
+        {
+
+        }
     }
 }

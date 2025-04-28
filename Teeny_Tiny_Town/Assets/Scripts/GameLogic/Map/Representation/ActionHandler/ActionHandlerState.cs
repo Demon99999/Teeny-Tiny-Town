@@ -30,14 +30,20 @@ namespace Assets.Scripts.GameLogic.Map.Representation.ActionHandler
 
         public abstract void OnPressed(Vector2 handlePosition);
 
-        public virtual void OnHandlePressedMovePerformed(Vector2 handlePosition) { }
-        
-        public virtual void OnHandlePressedMoveStarted(Vector2 handlePosition) { }
-        
+        public virtual void OnHandlePressedMovePerformed(Vector2 handlePosition)
+        {
+
+        }
+
+        public virtual void OnHandlePressedMoveStarted(Vector2 handlePosition)
+        {
+
+        }
+
         protected bool CheckTileIntersection(Vector2 handlePosition, out TileRepresentation tile)
         {
             tile = null;
-            
+
             Ray ray = GetRay(handlePosition);
             Debug.DrawRay(ray.origin, ray.direction * 100, Color.red, 2f);
 

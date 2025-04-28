@@ -74,7 +74,7 @@ namespace Assets.Scripts.GameLogic.Map.Representation.ActionHandler
         public override void OnHandleMoved(Vector2 handlePosition)
         {
             if (_canPlaced == false)
-            { 
+            {
                 return;
             }
 
@@ -92,7 +92,6 @@ namespace Assets.Scripts.GameLogic.Map.Representation.ActionHandler
                     }
                 }
             }
-
             else if (_isBuildingPressed)
             {
                 _markersVisibility.SetSelectFrameShowed(false);

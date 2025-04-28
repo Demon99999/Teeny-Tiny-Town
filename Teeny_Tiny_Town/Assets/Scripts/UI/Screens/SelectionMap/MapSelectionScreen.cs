@@ -97,7 +97,7 @@ namespace Assets.Scripts.UI.Screens.SelectionMap
         }
 
         private void OnNextMapButtonClicked()
-        { 
+        {
             _mapSwitcher.ShowNextWorld();
         }
 

@@ -69,35 +69,30 @@ namespace Assets.Scripts.Infrastructure.Factories
         public RewardPanel CreateRewardPanel(RewardType rewardType, Transform parent)
         {
             var config = _staticDataService.GetReward(rewardType);
-            return CreateUIElement<RewardPanel>(config.PrefabPanel, parent,
-                panel => panel.Init(config.IconAssetReference, rewardType));
+            return CreateUIElement<RewardPanel>(config.PrefabPanel, parent, panel => panel.Init(config.IconAssetReference, rewardType));
         }
 
         public void CreateAdditionBonusOfferItem(AdditionalBonusType bonusType, Transform parent)
         {
             var config = _staticDataService.GetAdditionalBonus(bonusType);
-            CreateUIElement<AdditionalBonusOfferItem>(config.PanelAssetReference, parent,
-                item => item.Init(bonusType, config.IconAssetReference));
+            CreateUIElement<AdditionalBonusOfferItem>(config.PanelAssetReference, parent, item => item.Init(bonusType, config.IconAssetReference));
         }
 
         public GainStoreItemPanel CreateGainStoreItemPanel(GainStoreItemType gainType, Transform parent)
         {
             var config = _staticDataService.GetGainStoreItem(gainType);
-            return CreateUIElement<GainStoreItemPanel>(config.PanelAssetReference, parent,
-                panel => panel.Init(gainType, config.SpriteconAssetReference));
+            return CreateUIElement<GainStoreItemPanel>(config.PanelAssetReference, parent, panel => panel.Init(gainType, config.SpriteconAssetReference));
         }
 
         public BuildingStoreItem CreateStoreItem(BuildingType buildingType, Transform parent)
         {
             var config = _staticDataService.GetBuildingStoreItem(buildingType);
-            return CreateUIElement<BuildingStoreItem>(_staticDataService.StoreItemsConfig.AssetReference, parent,
-                item => item.Init(buildingType, config.IconAsset));
+            return CreateUIElement<BuildingStoreItem>(_staticDataService.StoreItemsConfig.AssetReference, parent, item => item.Init(buildingType, config.IconAsset));
         }
 
         public SandboxPanelElement CreateSandboxPanelElement(Transform parent, Sprite icon)
         {
-            return CreateUIElement<SandboxPanelElement>(_staticDataService.SandboxConfig.SandboxPanelElement, parent,
-                element => element.Init(icon));
+            return CreateUIElement<SandboxPanelElement>(_staticDataService.SandboxConfig.SandboxPanelElement, parent, element => element.Init(icon));
         }
 
         public void CreateLockIcon(Transform parent)
@@ -107,22 +102,22 @@ namespace Assets.Scripts.Infrastructure.Factories
 
         public PeculiarityIconPanel CreatePeculiarityIconPanel(Sprite icon, Transform parent)
         {
-            return CreateUIElement<PeculiarityIconPanel>(_staticDataService.MapsConfig.PeculiarityIconPanel, parent,
-                panel => panel.Init(icon));
+            return CreateUIElement<PeculiarityIconPanel>(_staticDataService.MapsConfig.PeculiarityIconPanel, parent, panel => panel.Init(icon));
         }
 
-        private T CreateUIElement<T>(T prefab, Transform parent, Action<T> initialize = null) where T : Component
+        private T CreateUIElement<T>(T prefab, Transform parent, Action<T> initialize = null)
+            where T : Component
         {
             var instance = _container.InstantiatePrefab(prefab, parent);
             instance.transform.SetParent(parent, false);
 
             var component = instance.GetComponent<T>();
-            
             initialize?.Invoke(component);
             return component;
         }
 
-        private T CreateUIElement<T>(Func<T> factory, Transform parent, Action<T> initialize = null) where T : MonoBehaviour
+        private T CreateUIElement<T>(Func<T> factory, Transform parent, Action<T> initialize = null)
+            where T : MonoBehaviour
         {
             var instance = factory();
             instance.transform.SetParent(parent, false);
@@ -131,7 +126,8 @@ namespace Assets.Scripts.Infrastructure.Factories
             return instance;
         }
 
-        private T CreateAndBind<T>(Func<T> factory, Action<T> initialize = null) where T : MonoBehaviour
+        private T CreateAndBind<T>(Func<T> factory, Action<T> initialize = null)
+            where T : MonoBehaviour
         {
             var instance = factory();
             _container.BindInstance(instance).AsSingle();

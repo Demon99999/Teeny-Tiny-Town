@@ -64,7 +64,9 @@ namespace Assets.Scripts.GameLogic.Map.Representation.ActionHandler
                 _handlerStateMachine.Enter<NewBuildingPlacePositionHandler>();
             }
             else
+            {
                 _handlerStateMachine.Enter<ReplacedBuildingPositionHandler>();
+            }
         }
 
         private void OnRemoveBuildingButtonClicked()

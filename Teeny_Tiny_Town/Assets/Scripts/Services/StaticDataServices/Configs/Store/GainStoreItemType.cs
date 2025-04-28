@@ -5,6 +5,6 @@
         ReplaceItems,
         Bulldozer,
         Crane,
-        Lighthouse
+        Lighthouse,
     }
 }

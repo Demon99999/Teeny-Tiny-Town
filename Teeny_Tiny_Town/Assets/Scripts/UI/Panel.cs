@@ -16,6 +16,10 @@ namespace Assets.Scripts.UI
         }
 
         public abstract void Open();
-        public virtual void Hide() { }
+
+        public virtual void Hide()
+        {
+
+        }
     }
 }

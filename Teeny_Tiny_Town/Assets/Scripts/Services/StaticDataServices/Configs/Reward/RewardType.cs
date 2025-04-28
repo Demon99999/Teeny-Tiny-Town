@@ -6,6 +6,6 @@
         Bulldozer,
         Crane,
         Lighthouse,
-        WorldWalletValue
+        WorldWalletValue,
     }
 }

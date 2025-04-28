@@ -13,7 +13,8 @@ namespace Assets.Scripts.GameLogic.Map.Representation.ActionHandler
             _container = container;
         }
 
-        public TState CreateHandlerState<TState>() where TState : ActionHandlerState
+        public TState CreateHandlerState<TState>()
+            where TState : ActionHandlerState
         {
             TState state = _instantiator.Instantiate<TState>();
             _container.BindInterfacesAndSelfTo<TState>().FromInstance(state).AsSingle();

@@ -24,8 +24,14 @@ namespace Assets.Scripts.GameLogic.SandBox.Action
             _actionHandlerStateMachine.SetActive(true);
         }
 
-        public override void OnHandleMoved(Vector2 handlePosition) { }
-        
-        public override void OnPressed(Vector2 handlePosition) { }
+        public override void OnHandleMoved(Vector2 handlePosition)
+        {
+
+        }
+
+        public override void OnPressed(Vector2 handlePosition)
+        {
+
+        }
     }
 }

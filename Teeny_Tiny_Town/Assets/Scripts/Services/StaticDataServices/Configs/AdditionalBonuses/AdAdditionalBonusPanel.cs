@@ -2,8 +2,8 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using Zenject;
 using YG;
+using Zenject;
 
 namespace Assets.Scripts.Services.StaticDataServices.Configs.AdditionalBonuses
 {

@@ -12,16 +12,18 @@ namespace Assets.Scripts.UI
 
         private Tween _fader;
 
+        protected AnimationsConfig AnimationsConfig { get; private set; }
+
         [Inject]
         private void Construct(IStaticDataService staticDataService)
         {
             AnimationsConfig = staticDataService.AnimationsConfig;
         }
 
-        protected AnimationsConfig AnimationsConfig { get; private set; }
-
-        private void OnDestroy() =>
+        private void OnDestroy()
+        {
             _fader?.Kill();
+        }
 
         public virtual void Open()
         {

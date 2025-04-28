@@ -13,7 +13,7 @@ namespace Assets.Scripts.GameLogic.Map.Installer
         private const uint GainItemsCount = 1;
 
         private readonly IMapData _mapData;
-        
+
         public EducationWorldBootstrapper(
             IWorldChanger worldChanger,
             IMapFactory worldFactory,

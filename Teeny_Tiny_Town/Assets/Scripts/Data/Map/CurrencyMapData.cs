@@ -15,7 +15,6 @@ namespace Assets.Scripts.Data.Map
         public WorldWallet WorldWallet;
         public WorldMovesCounterData MovesCounter;
         public WorldStore WorldStore;
-        
         public BuildingType[] StartBuildingsStoreList;
 
         public CurrencyMapData(

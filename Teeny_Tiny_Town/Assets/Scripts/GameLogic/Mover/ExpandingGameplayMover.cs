@@ -19,8 +19,7 @@ namespace Assets.Scripts.GameLogic.Mover
             IPersistantProgrss persistentProgressService,
             WorldStateMachine worldStateMachine,
             NextBuildingForPlacingCreator nextBuildingForPlacingCreator)
-            : base(expandingWorldChanger, inputService, mapData, persistentProgressService,
-                worldStateMachine, nextBuildingForPlacingCreator)
+            : base(expandingWorldChanger, inputService, mapData, persistentProgressService, worldStateMachine, nextBuildingForPlacingCreator)
         {
             _expandingWorldChanger = expandingWorldChanger;
         }

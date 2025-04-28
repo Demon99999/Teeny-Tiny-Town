@@ -16,6 +16,9 @@ namespace Assets.Scripts.Infrastructure.StateMachine.State
             _sceneLoader.Load(CollectionScene);
         }
 
-        public void Exit() { }
+        public void Exit()
+        {
+
+        }
     }
 }

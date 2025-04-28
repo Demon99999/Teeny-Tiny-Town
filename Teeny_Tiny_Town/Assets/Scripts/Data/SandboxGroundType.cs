@@ -6,6 +6,6 @@
         WaterSurface,
         TallGround,
         SoilRoad,
-        AsphaltRoad
+        AsphaltRoad,
     }
 }

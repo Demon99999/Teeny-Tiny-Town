@@ -18,6 +18,9 @@ namespace Assets.Scripts.GameLogic.StateMashine
             _screensSwitcher.Switch<GameplayQuestsWindow>();
         }
 
-        public void Exit() { }
+        public void Exit()
+        {
+
+        }
     }
 }

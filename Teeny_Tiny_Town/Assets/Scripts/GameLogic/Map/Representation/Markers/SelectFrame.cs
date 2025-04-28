@@ -31,6 +31,9 @@ namespace Assets.Scripts.GameLogic.Map.Representation.Markers
             _canvas.enabled = false;
         }
 
-        public class Factory : PlaceholderFactory<SelectFrame> { }
+        public class Factory : PlaceholderFactory<SelectFrame>
+        {
+
+        }
     }
 }

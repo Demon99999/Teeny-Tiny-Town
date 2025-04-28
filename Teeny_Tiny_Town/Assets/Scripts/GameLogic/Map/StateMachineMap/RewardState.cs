@@ -22,6 +22,9 @@ namespace Assets.Scripts.GameLogic.Map.StateMachineMap
             _rewardsCreator.CreateRewards();
         }
 
-        public void Exit() { }
+        public void Exit()
+        {
+
+        }
     }
 }

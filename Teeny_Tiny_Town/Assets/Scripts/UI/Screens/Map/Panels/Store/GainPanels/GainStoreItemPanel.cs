@@ -1,5 +1,4 @@
-﻿using System;
-using Assets.Scripts.Data.Map;
+﻿using Assets.Scripts.Data.Map;
 using Assets.Scripts.Services.StaticDataServices;
 using Assets.Scripts.Services.StaticDataServices.Configs;
 using Assets.Scripts.Services.StaticDataServices.Configs.Store;

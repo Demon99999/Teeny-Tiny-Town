@@ -12,7 +12,7 @@ namespace Assets.Scripts.UI.Screens.ScreenStart
         public override abstract void Open();
 
         protected void ChangeCanvasGroupAlpha(float targetValue, TweenCallback callback = null)
-        { 
+        {
             _canvasGroup.DOFade(targetValue, AnimationsConfig.WindowOpeningStateDuration).onComplete += callback;
         }
     }

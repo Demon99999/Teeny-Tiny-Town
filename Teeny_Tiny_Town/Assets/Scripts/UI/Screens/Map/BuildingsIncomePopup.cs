@@ -40,7 +40,7 @@ namespace Assets.Scripts.UI.Screens.Map
         private int CalculateTotalIncome()
         {
             int total = 0;
-            total =  _mapData.GetTotalIncome();
+            total = _mapData.GetTotalIncome();
 
             if (total < 0)
             {

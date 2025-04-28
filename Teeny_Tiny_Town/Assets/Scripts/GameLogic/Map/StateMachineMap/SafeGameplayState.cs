@@ -22,6 +22,9 @@ namespace Assets.Scripts.GameLogic.Map.StateMachineMap
             _screensSwitcher.Switch<SaveGameplayWindow>();
         }
 
-        public void Exit() { }
+        public void Exit()
+        {
+
+        }
     }
 }

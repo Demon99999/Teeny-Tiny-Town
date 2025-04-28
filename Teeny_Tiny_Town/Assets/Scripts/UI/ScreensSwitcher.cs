@@ -20,14 +20,16 @@ namespace Assets.Scripts.UI
             _currentScreenHided = false;
         }
 
-        public void RegisterScreen<TScreenBase>(ScreenType screenType, IUIFactory uiFactory) where TScreenBase : ScreenBase
+        public void RegisterScreen<TScreenBase>(ScreenType screenType, IUIFactory uiFactory)
+            where TScreenBase : ScreenBase
         {
             ScreenBase screen = uiFactory.CreateScreen(screenType);
 
             _screens.Add(typeof(TScreenBase), screen);
         }
 
-        public void Switch<TScreenBase>() where TScreenBase : ScreenBase
+        public void Switch<TScreenBase>()
+            where TScreenBase : ScreenBase
         {
             if (_currentScreen != null)
             {
@@ -39,7 +41,8 @@ namespace Assets.Scripts.UI
             }
         }
 
-        public void Remove<TScreenBase>() where TScreenBase : ScreenBase
+        public void Remove<TScreenBase>()
+            where TScreenBase : ScreenBase
         {
             ScreenBase screen = _screens[typeof(TScreenBase)];
 
@@ -59,13 +62,15 @@ namespace Assets.Scripts.UI
             _currentScreen.Hide(callback: () => _currentScreenHided = false);
         }
 
-        private void Remove<TScreenBase>(ScreenBase screen) where TScreenBase: ScreenBase
+        private void Remove<TScreenBase>(ScreenBase screen)
+            where TScreenBase : ScreenBase
         {
-            screen.Destroy(); 
+            screen.Destroy();
             _screens.Remove(typeof(TScreenBase));
         }
 
-        private void OpenScren<TScreenBase>() where TScreenBase : ScreenBase
+        private void OpenScren<TScreenBase>()
+            where TScreenBase : ScreenBase
         {
             _currentScreen = _screens[typeof(TScreenBase)];
             _currentScreen.Open();

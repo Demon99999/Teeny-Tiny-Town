@@ -13,7 +13,6 @@ namespace Assets.Scripts.UI.Screens.Map.Buttons
             _removedBuildingPositionHandler = removedBuildingPositionHandler;
 
             ChangeCountValue(MapData.BulldozerItems.Count);
-            
             _removedBuildingPositionHandler.Entered += OnRemovedBuildingPositionHandlerEntered;
             _removedBuildingPositionHandler.Exited += OnRemovedBuildingPositionHandlerExited;
             MapData.BulldozerItems.CountChanged += ChangeCountValue;

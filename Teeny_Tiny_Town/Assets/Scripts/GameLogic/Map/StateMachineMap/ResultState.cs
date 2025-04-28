@@ -10,7 +10,7 @@ namespace Assets.Scripts.GameLogic.Map.StateMachineMap
         private readonly ScreensSwitcher _screensSwitcher;
         private readonly Map _map;
         private readonly IMapData _mapData;
-        
+
         public ResultState(ScreensSwitcher screensSwitcher, Map map, IMapData mapData)
         {
             _screensSwitcher = screensSwitcher;

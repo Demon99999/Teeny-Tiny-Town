@@ -40,6 +40,9 @@ namespace Assets.Scripts.UI
             _blur.material.DOFloat(targetValue, BlurMaterial, AnimationsConfig.WindowOpeningStateDuration);
         }
 
-        public class BlurFactory : PlaceholderFactory<Blur> { }
+        public class BlurFactory : PlaceholderFactory<Blur>
+        {
+
+        }
     }
 }

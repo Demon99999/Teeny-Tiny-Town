@@ -22,8 +22,6 @@ namespace Assets.Scripts.Infrastructure.Factories
         private readonly BuildingMarker.Factory _buildingMarkerFactory;
         private readonly IMapRotation _mapRotation;
 
-        public WorldGenerator WorldGenerator { get; private set; }
-
         public MapFactory(
             DiContainer container,
             WorldGenerator.Factory worldGeneratorFactory,
@@ -41,6 +39,8 @@ namespace Assets.Scripts.Infrastructure.Factories
             _staticDataService = staticDataService;
             _mapRotation = mapRotation;
         }
+
+        public WorldGenerator WorldGenerator { get; private set; }
 
         public BuildingRepresentation CreateBuilding(BuildingType buildingType, Vector3 position, Transform parent)
         {
@@ -100,7 +100,8 @@ namespace Assets.Scripts.Infrastructure.Factories
             return WorldGenerator;
         }
 
-        private T InstantiatePrefabComponent<T>(T prefabComponent, Vector3 position, Transform parent, float additionalRotation = 0) where T : Component
+        private T InstantiatePrefabComponent<T>(T prefabComponent, Vector3 position, Transform parent, float additionalRotation = 0)
+            where T : Component
         {
             float totalRotation = (additionalRotation + _mapRotation.RotationDegrees) % 360;
             Quaternion rotation = Quaternion.Euler(0, totalRotation, 0);
@@ -111,7 +112,8 @@ namespace Assets.Scripts.Infrastructure.Factories
             return component;
         }
 
-        private void BindToContainer<T>(T instance) where T : MonoBehaviour
+        private void BindToContainer<T>(T instance)
+            where T : MonoBehaviour
         {
             _container.Bind<T>().FromInstance(instance).AsSingle();
         }
@@ -122,7 +124,8 @@ namespace Assets.Scripts.Infrastructure.Factories
             target.SetParent(parent);
         }
 
-        private T CreateAndSetup<T>(Func<T> factory, Vector3 position, Transform parent, bool bindToContainer = false) where T : MonoBehaviour
+        private T CreateAndSetup<T>(Func<T> factory, Vector3 position, Transform parent, bool bindToContainer = false)
+            where T : MonoBehaviour
         {
             T instance = factory();
             SetTransform(instance.transform, position, parent);

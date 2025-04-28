@@ -23,6 +23,9 @@ namespace Assets.Scripts.GameLogic.Map.StateMachineMap
             _screensSwitcher.Switch<GainBuyingWindow>();
         }
 
-        public void Exit() { }
+        public void Exit()
+        {
+
+        }
     }
 }

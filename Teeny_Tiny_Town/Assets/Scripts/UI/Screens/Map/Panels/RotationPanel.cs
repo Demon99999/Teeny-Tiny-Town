@@ -36,6 +36,9 @@ namespace Assets.Scripts.UI.Screens.Map.Panels
             _world.RotateСlockwise();
         }
 
-        public class Factory : PlaceholderFactory<RotationPanel> { }
+        public class Factory : PlaceholderFactory<RotationPanel>
+        {
+
+        }
     }
 }

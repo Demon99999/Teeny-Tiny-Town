@@ -27,6 +27,9 @@ namespace Assets.Scripts.GameLogic
             ThemeChanger = _renderer.material.DOColor(Color, AnimationsConfig.ThemeChangingDuration);
         }
 
-        public class Factory : PlaceholderFactory<GamePlane> { }
+        public class Factory : PlaceholderFactory<GamePlane>
+        {
+
+        }
     }
 }

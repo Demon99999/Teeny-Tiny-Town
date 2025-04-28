@@ -80,7 +80,6 @@ namespace Assets.Scripts.Services.Input
             Pressed?.Invoke(_lastHandleMovePerformedPosition);
         }
 
-
         private void OnHandlePressedMoveStarted(InputAction.CallbackContext obj)
         {
             HandlePressedMoveStarted?.Invoke(_lastHandleMovePerformedPosition);

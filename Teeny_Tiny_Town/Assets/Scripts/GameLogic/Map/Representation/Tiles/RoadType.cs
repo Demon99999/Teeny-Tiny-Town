@@ -8,6 +8,6 @@
         TripleCrossroad,
         Deadlock,
         TurnTrail,
-        Trail
+        Trail,
     }
 }

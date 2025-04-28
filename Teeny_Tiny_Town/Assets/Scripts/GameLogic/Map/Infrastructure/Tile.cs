@@ -13,7 +13,6 @@ namespace Assets.Scripts.GameLogic.Map.Infrastructure
     {
         public readonly TileType Type;
         public readonly Vector2Int GridPosition;
-        
         protected readonly TileData TileData;
         protected readonly IStaticDataService StaticDataService;
 
@@ -144,7 +143,7 @@ namespace Assets.Scripts.GameLogic.Map.Infrastructure
             {
                 DisposeBuilding();
             }
-            
+
             Building = building;
             TileData.BuildingType = IsEmpty ? BuildingType.Undefined : Building.Type;
         }
