@@ -1,3 +1,3 @@
 # Teeny-Tiny-Town
-Черновик на ЯИ https://yandex.ru/games/app/430422?draft=true&amp;lang=ru
-Ипользовал плагин Zenject.
+Ипользован плагин Zenject.
+Ссылка на игру на ЯИ https://yandex.ru/games/app/475672?lang=ru
